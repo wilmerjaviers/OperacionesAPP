@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OperacionesApp.Pages.Rectangulo"
+             Title="Área del rectángulo">
+    <VerticalStackLayout Spacing="10" Padding="20">
+        <Label Text="Cálculo del Área del Rectángulo"
+               FontSize="24"
+               HorizontalOptions="Center"/>
+
+        <Entry x:Name="BaseRectangulo"
+               Placeholder="Ingrese la base del rectángulo"
+               Keyboard="Numeric"/>
+
+        <Entry x:Name="AlturaRectangulo"
+               Placeholder="Ingrese la altura del rectángulo"
+               Keyboard="Numeric"/>
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <Button Text="Calcular Área"
+                    Clicked="OnCalcularClicked"/>
+
+            <Button Text="Limpiar"
+                    Clicked="OnLimpiarClicked"
+                    BackgroundColor="Orange"/>
+        </HorizontalStackLayout>
+
+        <Label x:Name="Resultado"
+               HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OperacionesApp.Pages.Circulo"
+             Title="Área del círculo">
+    <VerticalStackLayout Spacing="10" Padding="20">
+        <Label Text="Cálculo del Área del Círculo"
+               FontSize="24"
+               HorizontalOptions="Center"/>
+
+        <Entry x:Name="RadioCirculo"
+               Placeholder="Ingrese el radio del círculo"
+               Keyboard="Numeric"/>
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <Button Text="Calcular Área"
+                    Clicked="OnCalcularClicked"/>
+
+            <Button Text="Limpiar"
+                    Clicked="OnLimpiarClicked"
+                    BackgroundColor="Orange"/>
+        </HorizontalStackLayout>
+
+        <Label x:Name="Resultado"
+               HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
